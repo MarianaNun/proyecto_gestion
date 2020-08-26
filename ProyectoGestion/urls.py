@@ -18,7 +18,6 @@ from django.urls import path, include
 
 from ProyectoGestion import views
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hora/<int:horas>', views.saludo, name='saludo'),
