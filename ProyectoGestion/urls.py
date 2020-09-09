@@ -20,7 +20,7 @@ from ProyectoGestion import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hora/<int:horas>', views.saludo, name='saludo'),
+    path('hora/<str:horas>', views.saludo, name='saludo'),
     path('usuario/', include('usuario.urls'))
 
 ]

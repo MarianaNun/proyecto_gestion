@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block cabecera %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css'%}">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="{% static 'js/base.js'%}"></script>
+{% endblock %}
+
+{% block cuerpo %}
+<div class="form">
+
+{% for usuario in usuarios %}
+	<h5>{{usuario.nombre}}  ---{{usuario.email}}</h5>
+	<a href="{% url 'eliminar' usuario.usuario_id %}">Eliminar</a>
+	<a href="{% url 'modificar' usuario.usuario_id %}">Modificar</a>
+	<a href="{% url 'detalle' usuario.usuario_id %}">Detalle</a>
+
+{% endfor %}
+</div>
+{% endblock %}

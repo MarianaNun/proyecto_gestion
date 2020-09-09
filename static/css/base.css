@@ -1,0 +1,205 @@
+
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(../fonts/Montserrat-Bold.ttf); }
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto-Regular.ttf); }
+
+body {
+  font-family: "Roboto", sans-serif, "Montserrat-Bold", "Roboto-Regular";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+
+
+body {
+  font-family: "Roboto-Regular";
+  font-size: 13px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold"; }
+
+html { 
+  background: url(../images/home-bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+
+body{
+  background-color: transparent !important;
+}
+
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  padding-bottom: 50px; }
+  header .bg-cover {
+    background: rgba(0, 0, 0, 0.7); }
+  header .input-group input {
+    display: none; }
+  header h2.logo {
+    font-size: 50px;
+    color: #ffffff; }
+  header .nav-fill {
+    max-width: 250px; }
+    header .nav-fill a {
+      color: #ffffff; }
+    header .nav-fill li:hover a {
+      color: #03133a; }
+  header .navbar li.nav-item a.nav-link {
+    font-family: "Montserrat-Bold";
+    color: #ffffff;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem; }
+  header .card {
+    color: #ffffff; }
+    header .card p {
+      text-transform: uppercase; }
+    header .card hr {
+      margin-top: 5px;
+      width: 30px;
+      border: 1px solid #03133a; }
+    header .card h2 {
+      font-size: 40px;
+      max-width: 510px;
+      margin: 20px auto; }
+    @media (max-width: 1299px) {
+      header .card h2 {
+        font-size: 24px; }
+      header .card a {
+        width: auto;
+        padding: 8px 15px;
+        font-size: 12px; } }
+    @media (max-width: 767px) {
+      header .card h2 {
+        font-size: 36px; }
+      header .card a {
+        width: auto;
+        padding: 12px 15px;
+        font-size: 16px; } }
+    @media (max-width: 500px) {
+      header .card h2 {
+        font-size: 24px; }
+      header .card a {
+        width: auto;
+        padding: 8px 15px;
+        font-size: 14px; } }
+  header .col-md-3 {
+    text-align: center;
+    padding: 5px 2.5px !important; }
+    header .col-md-3.first {
+      padding-left: 15px !important; }
+    header .col-md-3.last {
+      padding-right: 15px !important; }
+    header .col-md-3 img {
+      max-height: 227px; }
+    header .col-md-3 h5 {
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+  header .bar1, header .bar2, header .bar3 {
+    width: 25px;
+    height: 2px;
+    margin: 5px 0;
+    transition: 0.4s;
+    display: block;
+    position: relative; }
+  header .change .bar1 {
+    -webkit-transform: rotate(-42deg) translate(-2px, 6px);
+    transform: rotate(-42deg) translate(-2px, 6px); }
+  header .change .bar2 {
+    opacity: 0; }
+  header .change .bar3 {
+    -webkit-transform: rotate(46deg) translate(-4px, -8px);
+    transform: rotate(46deg) translate(-4px, -8px); }
+
+.nav-search {
+  display: none;
+  max-width: 600px;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  height: auto; }
+
+.toggle-search {
+  margin-top: 12px;
+  cursor: pointer; }

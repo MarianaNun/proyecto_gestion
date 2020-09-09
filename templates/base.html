@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	{% block cabecera %}{% endblock %}
+	<title>Informatorio 2020</title>
+</head>
+<body>
+ <header class="mt-0 pt-0">
+        <div class="bg-cover clearfix pt-3">
+            <h2 class="logo">Informatorio 2020</h2>
+            <nav class="nav nav-fill mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://facebook.com/fh5co" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/fh5co" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-rss"></i></a>
+                </li>
+            </nav>
+
+
+            <input type="text" id="nav-search" class="nav-search mx-auto" name="" class="form-control">
+            <div class="ml-0 mr-0 pb-1">
+                <nav class="navbar navbar-expand-md">
+
+                    <button class="navbar-toggler ml-auto" data-target="#my-nav" data-toggle="collapse"
+                        aria-controls="my-nav" aria-expanded="false" onclick="myFunction(this)"
+                        aria-label="Toggle navigation">
+                        <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span>
+                    </button>
+                    <div id="my-nav" class="collapse navbar-collapse">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">INICIO</a>
+                            </li>                            <li class="nav-item">
+                                <a class="nav-link" href="article.html">SOBRE NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">TECNOLOGIAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'listar'%}">USUARIOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="article.html">NOVEDADES</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACTO</a>
+                            </li>
+                            <li class="nav-item">
+                                <form action="" method="POST">
+                                    <div class="input-group mt-0 mx-auto" style="width:16px;">
+
+                                        <div class="">
+                                            <img src="{% static 'images/search-icon.png '%}" id="toggle-search"
+                                                class="ml-2 toggle-search" alt="search icon">
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+</header>
+ {% block cuerpo %}{% endblock %}  
+</body>
+</html>

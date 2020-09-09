@@ -1,0 +1,41 @@
+body {
+  background-image: url('../images/perrito.jpg'); 
+  background-repeat: no-repeat; 
+  background-size: cover
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.texto{font-size: 20px; 
+	border: 3px solid hsla(9, 100%, 64%, 0.25); 
+	background-color: hsla(9, 100%, 64%, 0.25)
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.propia {
+  color: yellow !important;
+  background-color: transparent !important;
+}

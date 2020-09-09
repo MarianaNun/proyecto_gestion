@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 
-from usuario.models import Usuario, Producto
+from usuario.models import Visitante, Producto
 
 def modificar_email(modeladmin, request, queryset):
 	queryset.update(email='email@test.com')
@@ -11,9 +11,9 @@ def modificar_email(modeladmin, request, queryset):
 
 
 class UsuarioAdmin(admin.ModelAdmin):
-	list_display = ('nombre', 'email')
+	list_display = ('user',)
 	actions = [modificar_email]
 
 
-admin.site.register(Usuario, UsuarioAdmin)
+admin.site.register(Visitante)
 admin.site.register(Producto)

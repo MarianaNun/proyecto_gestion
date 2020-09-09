@@ -1,0 +1,12 @@
+
+<form method='POST'>
+	 {% csrf_token %}
+
+	<label>Nombre</label><input type="" name="nombre" value="{{datos.nombre}}"><br>
+	<label>Telefono</label><input type="" name="telefono" value={{datos.telefono}}><br>
+	<label>Email</label><input type="" name="email" value={{datos.email}}><br>
+	<label>Contrasena</label><input type="" name="contrasena" value={{datos.contrasena}}><br>
+	<label>Domicilio</label><input type="" name="domicilio" value={{datos.domicilio}}><br>
+	<button type="submit">Enviar</button>
+	<a href="{% url 'listar'%}">Cancelar</a>
+</form>
